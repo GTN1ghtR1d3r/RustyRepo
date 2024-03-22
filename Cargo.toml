@@ -1,5 +1,5 @@
 [package]
-name = "RustyRepo" # the name of the package
+name = "rusty_repo" # the name of the package
 version = "0.0.1"    # the current version, obeying semver
 
 [dependencies]
