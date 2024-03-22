@@ -1,4 +1,4 @@
 Whats new? Nothing
 
-to build for release `cargo build --release`
-to run `cargo run`
+to build for release `cargo build --release`\n
+to run `cargo run`\n
