@@ -7,6 +7,7 @@ if(len(sys.argv) == 1):
     msg = input("provide commit msg: ")
 
 #changed comments
+os.system("git pull")
 os.system("git add --all")
 os.system(f"git commit -m \"{msg}\"")
 os.system("git push")
