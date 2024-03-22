@@ -1,0 +1,6 @@
+[package]
+name = "RustyRepo" # the name of the package
+version = "0.0.1"    # the current version, obeying semver
+
+[dependencies]
+random-number = "0.1.7"

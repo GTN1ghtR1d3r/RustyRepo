@@ -7,9 +7,12 @@
 // You can always return to the original code by clicking the "Reset" button ->
 
 // This is the main function.
+
+extern crate random_number;
+use random_number::random;
 fn main() {
     // Statements here are executed when the compiled binary is called.
-
+    let num: i8 = random!(..);
     // Print text to the console.
-    println!("Hello World!");
+    println!("{}",num);
 }
