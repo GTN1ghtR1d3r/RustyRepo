@@ -1,18 +1,28 @@
-// This is a comment, and is ignored by the compiler.
-// You can test this code by clicking the "Run" button over there ->
-// or if you prefer to use your keyboard, you can use the "Ctrl + Enter"
-// shortcut.
+use iced::widget::text;
+use iced::{Element, Sandbox, Settings};
 
-// This code is editable, feel free to hack it!
-// You can always return to the original code by clicking the "Reset" button ->
+fn main() -> iced::Result{
+    Editor::run(Settings::default())
+}
 
-// This is the main function.
+struct Editor;
 
-extern crate random_number;
-use random_number::random;
-fn main() {
-    // Statements here are executed when the compiled binary is called.
-    let num: i8 = random!(..);
-    // Print text to the console.
-    println!("{}",num);
+#[derive(Debug)]
+enum Message{}
+
+impl Sandbox for Editor{
+    type Message = Message;
+
+    fn new() -> Self{
+        Self
+    }
+    fn title(&self) -> String{
+        String::from("A cool editor!")
+    }
+    fn update(&mut self, message: Message){
+        match message {}
+    }
+    fn view(&self) -> Element<'_, Message>{
+        text("Hello, iced!").into()
+    }
 }
