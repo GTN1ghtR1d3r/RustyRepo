@@ -3,8 +3,8 @@ pub struct MyClass{
       b: f64,
 }
 
-pub trait BaseFunc {
-    fn new(a:f64,b:f64)->Self;
+pub trait BaseFunc { //trait defines like... a template? I guess for what you're going to implement in a class, you have to fill out the def for each of the traits.
+    fn new(a:f64,b:f64)->Self; 
     fn mult(&self)->f64;
     fn div(&self)->f64;
 }
